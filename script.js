@@ -13,7 +13,11 @@ if(inputField.value != ""){
    
     listItem.textContent = inputValue;  // assigning the inputValue to listItem variable
     removeButton.innerHTML = "x";
-
+    removeButton.style.color = "red";
+    removeButton.style.borderRadius = "5px";
+    removeButton.style.marginLeft = "2px";
+    removeButton.style.backgroundColor = "black";
+    
     // Append the list item to the task list
     taskList.appendChild(listItem);
     listItem.appendChild(removeButton);
